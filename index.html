@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WorldHelpChild - Tulong sa Sitio Calutan</title>
+<style>
+body{margin:0;font-family:Arial;background:#f0f7ff;color:#1e293b}
+.header{background:#1e3a8a;color:white;text-align:center;padding:30px 15px}
+.header h1{margin:0;font-size:32px}
+.btn{background:#f59e0b;color:white;border:none;padding:14px 30px;border-radius:30px;font-size:18px;font-weight:bold;cursor:pointer;margin-top:15px}
+.gallery{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:1100px;margin:auto}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center}
+.card .imgbox{background:#dbeafe;height:220px;display:flex;align-items:center;justify-content:center;font-size:50px}
+.card p{padding:12px;font-weight:bold;color:#1e3a8a}
+#donate{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center}
+.box{background:white;padding:25px;border-radius:16px;text-align:center;max-width:350px;width:90%}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🌍 WorldHelpChild</h1>
+<p>Tulong Para sa mga Bata ng Sitio Calutan, Caramoan<br>Caramoan Central School - Sept 12, 2026</p>
+<button class="btn" onclick="document.getElementById('donate').style.display='flex'">💝 DONATE</button>
+<p style="margin-top:12px;font-size:13px">📍 Sitio Calutan, Caramoan, Camarines Sur<br>Message: Facebook - WorldHelpChild<br>🔒 Safe - Walang number sa labas</p>
+</div>
+
+<div class="gallery">
+<div class="card"><div class="imgbox">✈️</div><p>Munting Piloto - Twinkler's Play Day</p></div>
+<div class="card"><div class="imgbox">👨‍✈️</div><p>Future Pilot may Mic</p></div>
+<div class="card"><div class="imgbox">🎒</div><p>Batang Papasok</p></div>
+<div class="card"><div class="imgbox">🏆</div><p>Nanalo May Crown & Certificate</p></div>
+<div class="card"><div class="imgbox">💂</div><p>Laging Handa - Kid Scout Blue Cap</p></div>
+<div class="card"><div class="imgbox">⭐</div><p>Twinklers Yellow & Green - District Star Revel 2026</p></div>
+</div>
+
+<div id="donate" onclick="this.style.display='none'">
+<div class="box" onclick="event.stopPropagation()">
+<h2>Maraming Salamat! 🙏</h2>
+<p>GCash Donation (dito lang makikita):</p>
+<h2 style="color:#1e3a8a">0945 846 3855</h2>
+<button onclick="navigator.clipboard.writeText('09458463855');alert('Na-copy! GCash')" style="padding:10px 20px;border-radius:8px;border:none;background:#1e3a8a;color:white">📋 Copy GCash</button>
+<br><br>
+<button onclick="document.getElementById('donate').style.display='none'" style="padding:8px 18px;border:none;background:#e2e8f0;border-radius:8px">Isara</button>
+<p style="font-size:11px;margin-top:12px">🔒 Nakatago lang sa Donate button</p>
+</div>
+</div>
+
+<div style="background:#1e3a8a;color:white;text-align:center;padding:15px;margin-top:20px">
+WorldHelpChild © 2026 - Tulong Para sa Kabataan
+</div>
+</body>
+</html>
